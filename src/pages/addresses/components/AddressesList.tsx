@@ -28,6 +28,7 @@ export const AddressesList: React.FC<AddressesListProps> = ({
             padding: "0.75em 1em",
             position: "relative",
           }}
+          data-testid={`box-address`}
         >
           <Typography
             component="header"
@@ -56,7 +57,7 @@ export const AddressesList: React.FC<AddressesListProps> = ({
               width: "1.5em",
             }}
           >
-            <DeleteIcon sx={{ fontSize: "0.8em" }} />
+            <DeleteIcon sx={{ fontSize: "0.8em" }} data-testid="icon-delete" />
           </IconButton>
         </Box>
       ))}

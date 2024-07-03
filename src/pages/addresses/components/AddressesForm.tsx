@@ -71,6 +71,9 @@ export const AddressesForm: React.FC<AddressesFormProps> = ({
                 ? formik.errors.address
                 : undefined
             }
+            inputProps={{
+              "data-testid": "input-address",
+            }}
           />
         </Box>
 
@@ -100,6 +103,9 @@ export const AddressesForm: React.FC<AddressesFormProps> = ({
                   : formik.errors.departmentIds
                 : undefined
             }
+            inputProps={{
+              "data-testid": "input-departments",
+            }}
           />
         </Box>
         <Typography
@@ -121,6 +127,9 @@ export const AddressesForm: React.FC<AddressesFormProps> = ({
           multiline
           minRows={3}
           sx={{ marginBottom: 2.5 }}
+          inputProps={{
+            "data-testid": "input-description",
+          }}
         />
         <Button
           variant="contained"
@@ -132,6 +141,7 @@ export const AddressesForm: React.FC<AddressesFormProps> = ({
             fontWeight: 400,
             marginBottom: 4,
           }}
+          data-testid="button-submit"
         >
           Add address
         </Button>
